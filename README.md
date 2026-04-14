@@ -23,6 +23,8 @@ This demonstrates how backend data can be served as an API.
 
 The application provides a frontend form where users can enter details such as name and email.
 
+![alt text](<images/Screenshot 2026-04-14 120258.png>)
+
 4. How it works:
 - The form is created using HTML (`form.html`).
 - When the user submits the form:
@@ -38,11 +40,15 @@ Option A: JSON File
 - Existing data is read from `data.json`.
 - New user data is appended to the list.
 - The updated data is written back to the file using `json.dump()`.
+![alt text](<images/Screenshot 2026-04-14 121014.png>)
+
 
 Option B: MongoDB Atlas
 - A connection is established using `MongoClient`.
 - User data is inserted into a collection using `insert_one()`.
 - The database stores all submitted entries.
+![alt text](<images/Screenshot 2026-04-14 120309.png>)
+
 
 6. Success and Error Handling
 
@@ -50,11 +56,13 @@ Option B: MongoDB Atlas
 - If data is stored successfully:
   - The user is redirected to `/success`.
   - A message "Data submitted successfully" is displayed.
+  ![alt text](<images/Screenshot 2026-04-14 120355.png>)
 
 ### Error Case:
 - If an error occurs:
   - The same form page is shown again.
-  - The error message is displayed to the user.
+  - The error message is displayed to the
+  ![alt text](<images/Screenshot 2026-04-14 120622.png>)user.
 
 7. Overall Flow
 
